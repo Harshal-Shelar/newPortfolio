@@ -4,22 +4,24 @@
         width: 100%;
         opacity: 0.3;
     }
-
+    .heading {
+        font-size: 60px;
+        background-image: repeating-linear-gradient(to right, #ffb703, rgb(0, 132, 255) 10%, #3c9a44 20%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
     .workInfo {
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-
-        h1 {
-            font-size: 60px;
-            margin-top: 7rem;
-            background-image: repeating-linear-gradient(to right, #ffb703, rgb(0, 132, 255) 10%, #3c9a44 20%);
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-        }
+        display: inline-block;
 
         .cards {
             display: flex;
@@ -27,9 +29,11 @@
             margin-top: 7rem;
 
             .card {
-                background-color: rgb(38, 38, 38);
+                background-color: transparent;
                 padding: 2rem 1rem;
                 width: 400px;
+                backdrop-filter: blur(10px);
+                border: 0.5px solid rgb(36, 36, 36);
 
                 h3 {
                     font-size: 30px;
