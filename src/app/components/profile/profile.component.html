@@ -1,2 +1,70 @@
-<img src="https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-2098428.jpg&fm=jpg"
-    alt="">
+<div class="profileMain">
+    <img class="backImg" src="../../../assets/profileBack.jpg" alt="">
+
+    <div class="mainInfoAndImg">
+        <div class="mainInfo">
+            <div class="intro">
+                Hi, my name is
+            </div>
+            <div class="name">
+                Harshal Shelar
+            </div>
+            <div class="profession">
+                Software Engineer
+            </div>
+            <div class="btns">
+                <button class="resume">Resume</button>
+                <button class="resume" (click)="openPopup = true">About</button>
+            </div>
+            <div class="socialBtns">
+                <i class="fa fa-github"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" *ngIf="openPopup">
+    <div class="popup">
+        <a class="close" (click)="openPopup = false">&times;</a>
+        <div class="content">
+            <h2>About</h2>
+            <span>Immediate joiner. Looking for a better opportunity as an Angular or MEAN STACK
+                developer With 2 years of relevant Industrial experience in Angular Technology in the
+                IT Industry. Completed B.Tech in Information Technology (6.2 CGPA). And
+                passionate about learning new technologies Expert in creating responsive web
+                applications and have knowledge of backend technologies like Node js.</span>
+
+            <div class="otherInfo">
+                <div class="mainInfo">
+                    <div class="twoBlock">
+                        <div class="info">
+                            <i class="fa fa-graduation-cap"></i>
+                            <span class="data textWrap">B.Tech (Information Technology)</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa fa-phone"></i>
+                            <span class="data">+91 8600480438</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="data">harshalshelar8251@gmail.com</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa fa-map-marker"></i>
+                            <span class="data">3207, Near Phadtare Wada, Ganapati Road, Ashta 416 301</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa fa-birthday-cake"></i>
+                            <span class="data">25 November 1998</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profileImg">
+                    <img src="assets/blackProfile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TechSkillsComponent } from './components/tech-skills/tech-skills.component';
 import { OtherSkillsComponent } from './components/other-skills/other-skills.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OtherSkillsComponent } from './components/other-skills/other-skills.com
     ResumeComponent,
     HeaderComponent,
     TechSkillsComponent,
-    OtherSkillsComponent
+    OtherSkillsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
