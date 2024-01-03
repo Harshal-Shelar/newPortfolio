@@ -26,3 +26,7 @@ body{
 .colorBlue{
     color: rgb(0, 132, 255);
 }
+
+.marginRight{
+    margin-right: -5rem !important;
+}

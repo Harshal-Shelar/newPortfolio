@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TechSkillsComponent } from './components/tech-skills/tech-skills.component';
 import { OtherSkillsComponent } from './components/other-skills/other-skills.component';
 import { AboutComponent } from './components/about/about.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AboutComponent } from './components/about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

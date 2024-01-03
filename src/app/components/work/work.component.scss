@@ -1,28 +1,24 @@
 .mainWork {
-    img {
+    .backImg {
         height: 100%;
         width: 100%;
         opacity: 0.3;
+        position: fixed;
     }
-    .heading {
-        font-size: 60px;
-        background-image: repeating-linear-gradient(to right, #ffb703, rgb(0, 132, 255) 10%, #3c9a44 20%);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-    }
+   
     .workInfo {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin: 0 auto 5rem;
+        width: 1100px;
         text-align: center;
-        display: inline-block;
 
+        .heading {
+            font-size: 60px;
+            background-image: repeating-linear-gradient(to right, #ffb703, rgb(0, 132, 255) 10%, #3c9a44 20%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            padding-top: 5rem;
+        }
         .cards {
             display: flex;
             gap: 2rem;
@@ -32,8 +28,9 @@
                 background-color: transparent;
                 padding: 2rem 1rem;
                 width: 400px;
-                backdrop-filter: blur(10px);
+                backdrop-filter: blur(15px);
                 border: 0.5px solid rgb(36, 36, 36);
+                box-shadow: 10px 10px 15px -5px rgb(45, 45, 45);
 
                 h3 {
                     font-size: 30px;
@@ -102,9 +99,9 @@
     opacity: 1;
 
     .popup {
-        margin: 20px auto;
+        margin: 5rem auto 20px;
         padding: 20px;
-        background: #2f2f2f;
+        background: #1e1e1e;
         border-radius: 15px;
         width: 650px;
         position: relative;
@@ -171,11 +168,12 @@
                 }
             }
             .tech{
-                color: rgb(215, 215, 215);
+                color: rgb(255, 255, 255);
                 margin-left: 2rem;
                 font-size: 17px;
                 line-height: 30px;
                 font-weight: bold;
+                letter-spacing: 0.5px;
 
                 span{
                     color: #ffb703;
