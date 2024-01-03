@@ -1,0 +1,183 @@
+.mainWork {
+    img {
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .workInfo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h1 {
+            font-size: 60px;
+            margin-top: 7rem;
+            background-image: repeating-linear-gradient(to right, #ffb703, rgb(0, 132, 255) 10%, #3c9a44 20%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        .cards {
+            display: flex;
+            gap: 2rem;
+            margin-top: 7rem;
+
+            .card {
+                background-color: rgb(38, 38, 38);
+                padding: 2rem 1rem;
+                width: 400px;
+
+                h3 {
+                    font-size: 30px;
+                    color: white;
+                    margin: 2rem 0 1rem;
+                }
+
+                .imgComp {
+                    text-align: center;
+
+                    .compImg {
+                        height: 10rem;
+                        width: 10rem;
+                        margin-top: -6rem;
+                        z-index: 999;
+                        opacity: 1;
+                        text-align: center;
+                        box-shadow: 0px 0px 10px 4px rgb(24, 24, 24);
+                        border-radius: 20px;
+                    }
+                }
+
+                ul {
+                    li {
+                        color: rgb(202, 202, 202);
+                        list-style: decimal;
+                        text-align: left;
+                        margin: 0.5rem 0;
+                    }
+                }
+
+                .btnCenter {
+                    text-align: center;
+
+                    .readMoreBtn {
+                        background-color: rgb(0, 132, 255);
+                        color: white;
+                        border: 2px solid rgb(0, 132, 255);
+                        padding: 0.5rem 2rem;
+                        border-radius: 5px;
+                    }
+
+                    .readMoreBtn:hover {
+                        box-shadow: 0px 0px 15px 2px rgb(0, 132, 255);
+                        background-color: black;
+                        color: rgb(0, 132, 255);
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+
+    .popup {
+        margin: 20px auto;
+        padding: 20px;
+        background: #2f2f2f;
+        border-radius: 15px;
+        width: 650px;
+        position: relative;
+        transition: all 5s ease-in-out;
+        z-index: 999;
+
+        .backImg {
+            height: 100%;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .close {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            transition: all 200ms;
+            font-size: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #bababa;
+        }
+
+        .close:hover {
+            color: rgb(0, 132, 255);
+            cursor: pointer;
+        }
+
+        .content {
+            max-height: fit-content;
+            width: fit-content;
+            overflow: auto;
+
+            .mainInfo{
+                border-bottom: 2px solid gray;
+                margin: 1rem 0;
+                padding-bottom: 1rem;
+
+                .title, .disg, .date {
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    margin: 1px;
+                }
+                .title{
+                    font-size: 40px;
+                    color: rgb(0, 132, 255);
+                }
+                .disg{
+                    font-size: 30px;
+                    color: #ffb703;
+                }
+                .date{
+                    font-size: 20px;
+                    color: rgb(0, 132, 255);
+                }
+            }
+            .details{
+                ul{
+                    li{
+                        letter-spacing: 1px;
+                        color: #bababa;
+                    }
+                }
+            }
+            .tech{
+                color: rgb(215, 215, 215);
+                margin-left: 2rem;
+                font-size: 17px;
+                line-height: 30px;
+                font-weight: bold;
+
+                span{
+                    color: #ffb703;
+                    margin: 2rem 0;
+                }
+            }
+        }
+    }
+}

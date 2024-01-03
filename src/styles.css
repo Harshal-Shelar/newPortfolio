@@ -8,3 +8,21 @@
 body{
     background-color: black;
 }
+
+.colorYellow{
+    background-color: #ffb703 !important;
+    border: 2px solid #ffb703 !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.colorYellow:hover{
+    background-color: black !important;
+    border: 2px solid #ffb703 !important;
+    color: #ffb703 !important;
+    box-shadow: 0px 0px 15px 2px #ffb703 !important;
+}
+
+.colorBlue{
+    color: rgb(0, 132, 255);
+}

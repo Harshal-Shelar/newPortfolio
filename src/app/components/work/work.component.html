@@ -1,1 +1,80 @@
-<img src="https://c1.wallpaperflare.com/preview/547/595/807/business-computer-contemporary-dark.jpg" alt="">
+<div class="mainWork">
+    <img src="https://c1.wallpaperflare.com/preview/547/595/807/business-computer-contemporary-dark.jpg" alt="">
+
+    <div class="workInfo">
+        <h1>Work Experience</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="imgComp" style="text-align: center;">
+                    <img class="compImg" src="assets/aquarious.jpg" alt="">
+                </div>
+                <h3>Aquarious Technology</h3>
+                <ul>
+                    <li>Created Angular-based responsive web application from scratch where
+                        admin and user have login and sign-up credentials</li>
+                    <li>Admin can manage the property listed and the user can buy these
+                        properties with the facilities listed by the admin, and Admin can go
+                        through the complaints registered by the user.</li>
+                </ul>
+                <div class="btnCenter">
+                    <button class="readMoreBtn" (click)="openPopupFun('Aquarious')">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgComp" style="text-align: center;">
+                    <img class="compImg" src="assets/fintech.jpg" alt="">
+                </div>
+                <h3>Fintech Global Center</h3>
+                <ul>
+                    <li>Developed NoCode responsive web application which is an Angular based project that is created to
+                        reduce the workload of creating
+                        applications with or without buying domains through programming</li>
+                    <li>Designed reusable and reliable code for use within a distributed cloud
+                        environments and to maintain the versions of code on GitLab.</li>
+                </ul>
+                <div class="btnCenter">
+                    <button class="readMoreBtn colorYellow" (click)="openPopupFun('Fintech')">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgComp" style="text-align: center;">
+                    <img class="compImg" src="assets/intellect.png" alt="">
+                </div>
+                <h3>Intellect Design Arena</h3>
+                <ul>
+                    <li>The Product is designed to be used to give the decision of Pay or No
+                        Pay whether the transaction can be done or not depending on the
+                        Limits and Balances in the account.</li>
+                    <li>Revised, debugged, and updated old code bases to modern development
+                        standards, reducing operating costs, and improving functionality.</li>
+                </ul>
+                <div class="btnCenter">
+                    <button class="readMoreBtn" (click)="openPopupFun('Intellect')">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" *ngIf="openPopup">
+    <div class="popup">
+        <a class="close" (click)="closePopup()">&times;</a>
+        <div class="content">
+            <div class="mainInfo">
+                <h2 class="title">{{title}}</h2>
+                <h3 class="disg">{{disg}}</h3>
+                <h3 class="date">{{date}}</h3>
+            </div>
+            <div class="details" *ngFor="let data of compDetails">
+                <ul>
+                    <li>{{data.name}}</li>
+                </ul>
+            </div>
+            <div class="tech" *ngFor="let data of technology">
+                Front End : <span>{{data.frontEnd}}</span>&nbsp;&nbsp;
+                Backend : <span>{{data.backend}}</span>&nbsp;&nbsp;
+                Database : <span>{{data.database}}</span>
+            </div>
+        </div>
+    </div>
+</div>

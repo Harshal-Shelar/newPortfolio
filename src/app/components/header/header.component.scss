@@ -41,14 +41,18 @@
     }
     .contactMe{
         border: 2px solid rgb(0, 132, 255);
-        color: rgb(0, 132, 255);
-        background-color: black;
+        color: white;
+        background-color: rgb(0, 132, 255);
         font-size: 15px;
         padding: 0.5rem 1rem;
+        letter-spacing: 1px;
+        border-radius: 10px;
     }
     .contactMe:hover{
         box-shadow: 0px 0px 15px 2px rgb(0, 132, 255);
-        transition: 0.5s;
+        background-color: black;
         border: 2px solid black;
+        transition: 0.5s;
+        color: rgb(0, 132, 255);
     }
 }
