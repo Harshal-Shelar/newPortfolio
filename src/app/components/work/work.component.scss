@@ -1,4 +1,6 @@
 .mainWork {
+    // overflow: auto;
+
     .backImg {
         height: 100%;
         width: 100%;
@@ -178,6 +180,44 @@
                 span{
                     color: #ffb703;
                     margin: 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 1124px) {
+    .mainWork{
+        .workInfo{
+            width: 80%;
+            .heading{
+                padding-top: 2rem;
+                font-size: 40px;
+            }
+            .cards{
+                display: inline-block;
+
+                .card{
+                    margin: 0 0 7rem;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .mainWork{
+        .workInfo{
+            .heading{
+                padding-top: 6rem;
+            }
+            .cards{
+                margin: 5rem auto 0;
+                width: 100%;
+                text-align: center;
+                .card{
+                    width: 100%;
                 }
             }
         }

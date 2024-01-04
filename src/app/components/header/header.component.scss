@@ -1,4 +1,4 @@
-.mainFooter{
+.mainFooter {
     margin: 0 auto 0;
     width: 100%;
     background-color: black;
@@ -10,38 +10,41 @@
     position: fixed;
     z-index: 999;
 
-    .mainLogo{
-        img{
+    .mainLogo {
+        img {
             height: 3rem;
             width: auto;
             cursor: pointer;
             border-radius: 10px;
         }
-        img:hover{
+
+        img:hover {
             box-shadow: 0px 0px 15px 2px rgb(0, 132, 255);
             transition: 0.5s;
         }
     }
 
-    .mainUl{
+    .mainUl {
         display: flex;
         gap: 1.5rem;
         margin: 0;
 
-        li{ 
+        li {
             list-style: none;
-            font-weight:normal;
+            font-weight: normal;
             cursor: pointer;
             color: white;
             font-size: 18px;
             letter-spacing: 1.5px;
         }
-        li:hover{
+
+        li:hover {
             text-shadow: rgb(255, 255, 255) 1px 0 30px;
             transition: 0.2s;
         }
     }
-    .contactMe{
+
+    .contactMe {
         border: 2px solid rgb(0, 132, 255);
         color: white;
         background-color: rgb(0, 132, 255);
@@ -50,11 +53,99 @@
         letter-spacing: 1px;
         border-radius: 10px;
     }
-    .contactMe:hover{
+
+    .contactMe:hover {
         box-shadow: 0px 0px 15px 2px rgb(0, 132, 255);
         background-color: black;
         border: 2px solid black;
         transition: 0.5s;
         color: rgb(0, 132, 255);
+    }
+}
+
+.navUl {
+    position: fixed;
+    margin-top: 2.7rem;
+    backdrop-filter: blur(25px);
+    z-index: 999;
+    width: 100%;
+
+    ul {
+        padding-left: 0;
+        align-items: center;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+
+        li {
+            padding-left: 1rem;
+            list-style: none;
+            margin: 30px 0;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            font-size: 20px;
+            letter-spacing: 2px;
+
+            i {
+                margin-right: 1rem;
+                color: #ffb703;
+            }
+        }
+    }
+}
+
+@media (min-width : 1130px) {
+    .respFooter {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width : 1130px) {
+
+    .mainFooter {
+        display: none;
+        visibility: hidden;
+    }
+
+    .respFooter {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        backdrop-filter: blur(15px);
+        z-index: 999;
+        box-shadow: 0px 0px 15px 1px gray;
+
+        .userLogo {
+
+            .userImg {
+                border-radius: 50%;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+
+        .name {
+            span {
+                font-size: 30px;
+                background-image: repeating-linear-gradient(to right, #ffb703, rgb(0, 132, 255) 30%, #3c9a44 20%);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+
+        .lines {
+            i {
+                font-size: 40px;
+                color: white;
+            }
+        }
     }
 }

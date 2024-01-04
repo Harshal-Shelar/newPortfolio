@@ -15,3 +15,27 @@
         Contact Me
     </button>
 </div>
+<div class="navUl" *ngIf="openNav">
+    <ul (click)="openNav = false">
+        <li routerLink="/profile" style="padding-top: 1rem;"> <i class="fa fa-user-circle-o"></i> Profile</li>
+        <li routerLink="/work"> <i class="fa fa-suitcase"></i> Work</li>
+        <li routerLink="/projects"> <i class="fa fa-folder-open-o"></i> Projects</li>
+        <li routerLink="/education"> <i class="fa fa-mortar-board"></i> Education</li>
+        <li routerLink="/techSkills"> <i class="fa fa-laptop"></i> Technical Skills</li>
+        <li routerLink="/otherSkills"> <i class="fa fa-futbol-o"></i> Other Skills</li>
+        <li routerLink="/resume"> <i class="fa fa-file-pdf-o"></i> Resume</li>
+    </ul>
+</div>
+
+<div class="respFooter">
+    <div class="userLogo">
+        <img class="userImg" src="assets/casual.png" alt="">
+    </div>
+    <div class="name">
+        <span>My Portfolio</span>
+    </div>
+    <div class="lines">
+        <i class="fa fa-bars" (click)="openHideNav()" *ngIf="!openNav"></i>
+        <i class="fa fa-times" (click)="openHideNav()" *ngIf="openNav"></i>
+    </div>
+</div>

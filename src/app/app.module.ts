@@ -13,6 +13,7 @@ import { TechSkillsComponent } from './components/tech-skills/tech-skills.compon
 import { OtherSkillsComponent } from './components/other-skills/other-skills.component';
 import { AboutComponent } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
+import { PdfService } from './pdf.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [PdfService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

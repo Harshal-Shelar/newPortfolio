@@ -1,4 +1,6 @@
 .profileMain {
+    overflow: auto;
+
     .backImg {
         height: 100%;
         width: 100%;
@@ -30,7 +32,8 @@
                 font-weight: bold;
                 letter-spacing: 1.5px;
             }
-            .name::after{
+
+            .name::after {
                 position: absolute;
                 width: 0%;
                 content: "";
@@ -40,9 +43,11 @@
                 background-color: #333;
                 transition: all ease 1s;
             }
-            .name:hover::after{
+
+            .name:hover::after {
                 width: 100%;
             }
+
             .profession {
                 color: #ffb703;
                 font-size: 50px;
@@ -167,45 +172,107 @@
                 width: 100%;
                 margin-top: 2rem;
 
-                .mainInfo{
+                .mainInfo {
                     .twoBlock {
                         display: inline-block;
                         gap: 2rem;
                         align-items: center;
                         width: 100%;
-                        
-    
+
+
                         .info {
                             display: flex;
                             gap: 2rem;
                             width: 100%;
                             margin: 1.5rem 0;
                             align-items: center;
-    
+
                             i {
                                 font-size: 30px;
                                 color: #ffb703;
                                 width: 10%;
                                 text-align: center;
                             }
-    
+
                             .data {
                                 padding: 0;
                                 width: 90%;
                                 letter-spacing: 1px;
                             }
 
-                            .textWrap{
+                            .textWrap {
                                 text-wrap: nowrap;
                             }
                         }
                     }
                 }
-                .profileImg{
-                    img{
+
+                .profileImg {
+                    img {
                         height: 30rem;
                         width: auto;
                         margin-top: -10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 900px) {
+    .profileMain {
+        .mainInfoAndImg {
+            left: 50%;
+
+            .mainInfo {
+                .name {
+                    text-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 767px) {
+    .profileMain {
+        .mainInfoAndImg {
+            .mainInfo {
+                .btns {
+                    display: inline-grid;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 600px) {
+    .profileMain {
+        .mainInfoAndImg {
+            width: 90%;
+
+            .mainInfo {
+                .name {
+                    text-wrap: wrap;
+                }
+
+                .btns {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 390px) {
+    .profileMain {
+        .mainInfoAndImg {
+            .mainInfo {
+                .btns {
+                    display: inline-grid;
+
+                    .resume {
+                        width: 200%;
                     }
                 }
             }

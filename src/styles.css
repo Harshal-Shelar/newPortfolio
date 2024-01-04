@@ -30,3 +30,15 @@ body{
 .marginRight{
     margin-right: -5rem !important;
 }
+
+.mainHeading{
+    font-size: 50px;
+    color: rgb(0, 132, 255);
+    text-shadow: 0 0 10px rgb(0, 52, 100), 0 0 10px rgb(0, 132, 255); 
+    padding-top: 5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 999;
+    opacity: 1;
+    text-align: center;
+}

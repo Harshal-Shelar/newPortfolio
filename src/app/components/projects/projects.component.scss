@@ -54,21 +54,23 @@
                     text-align: left;
                     color: white;
 
-                    h3{
+                    h3 {
                         font-size: 24px;
                     }
+
                     h4 {
                         color: #ffb703;
                     }
 
-                    .sourceBtn{
+                    .sourceBtn {
                         background-color: transparent;
                         border: 2px solid rgb(0, 132, 255);
                         border-radius: 10px;
                         padding: 0.5rem 1rem;
                         color: rgb(0, 132, 255);
                     }
-                    .sourceBtn:hover{
+
+                    .sourceBtn:hover {
                         background-color: black;
                         box-shadow: 0px 0px 15px 1px rgb(0, 132, 255);
                         transition: 0.5s;
@@ -91,6 +93,50 @@
                             color: rgb(0, 132, 255);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 999px) {
+    .mainProjects {
+        .mainCard {
+            width: 100%;
+
+            .card {
+                width: 70%;
+                height: fit-content;
+
+                .imgAndDetails {
+                    display: inline;
+
+                    .headings {
+                        margin-top: 1rem;
+                    }
+
+                    .proIcon {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 767px) {
+    .mainProjects {
+        .mainCard {
+            .heading{
+                font-size: 40px;
+            }
+            .card {
+                width: 90%;
+
+                .imgAndDetails {
+                    width: 100%;
                 }
             }
         }
