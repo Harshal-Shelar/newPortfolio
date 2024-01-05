@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PdfService } from 'src/app/pdf.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -8,10 +9,15 @@ import { Router } from '@angular/router';
 })
 export class ContactMeComponent implements OnInit {
 
-  email : any = "harshalshelar8251@gmail.com"
-  constructor(private router : Router) { }
+  email : any = "harshalshelar8251@gmail.com";
+  opacityNew : any
+  constructor(private router : Router, private pdfService : PdfService) { }
 
   ngOnInit(): void {
+    this.pdfService.topBar.subscribe(value => {
+      this.opacityNew = value;
+      console.log("opacity ",this.opacityNew);
+   });
   }
 
   openMap(){

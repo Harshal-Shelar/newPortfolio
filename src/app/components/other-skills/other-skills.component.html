@@ -1,5 +1,4 @@
-<div class="mainOtherSkills">
-    <!-- <img class="backImg" src="assets/black1.jpg" alt=""> -->
+<div class="mainOtherSkills" [ngClass]=" opacityNew ? 'opacity3' : '' ">
 
     <h2 class="mainHeading">Curriculum Activities</h2>
     <div class="innerClass">
@@ -38,19 +37,19 @@
     <div class="innerClass">
         <h2 class="hobHeading">Achievments</h2>
         <div class="classMain">
-            <div class="center" (click)="redHatPopup = true">
+            <div class="center" (click)="openPopupFun('redhat')">
                 <div class="article-card cardPointer">
                     <div class="content">
-                        <button class="cerBtn" (click)="redHatPopup = true">Show Certificate</button>
+                        <button class="cerBtn" (click)="openPopupFun('redhat')">Show Certificate</button>
                     </div>
                     <img src="https://mspoweruser.com/wp-content/uploads/2016/06/Redhat-Linux-Dot-NEt.jpg"
                         alt="article-cover" />
                 </div>
             </div>
-            <div class="center" (click)="sihPopup = true">
+            <div class="center" (click)="openPopupFun('sih')">
                 <div class="article-card cardPointer">
                     <div class="content">
-                        <button class="cerBtn" (click)="sihPopup = true">Show Certificate</button>
+                        <button class="cerBtn" (click)="openPopupFun('sih')">Show Certificate</button>
                     </div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAawpJ5EqBuxEtGEYFYzVd6tlbNlPdMFs7gQ6CsVnZWSQJCXd5o4EDsZkYR_WjMmP9bkY&usqp=CAU"
                         alt="article-cover" />
@@ -96,9 +95,9 @@
     </div>
 </div>
 
-<div class="overlay" *ngIf="redHatPopup" (click)="redHatPopup = false">
+<div class="overlay" *ngIf="redHatPopup" (click)="closePopupFun()">
     <div class="popup">
-        <a class="close" (click)="redHatPopup = false">&times;</a>
+        <a class="close" (click)="closePopupFun()">&times;</a>
         <div class="content">
         <img src="assets/redHat.jpg" alt="">
         </div>
@@ -107,7 +106,7 @@
 
 <div class="overlay" *ngIf="sihPopup" (click)="sihPopup = false">
     <div class="popup">
-        <a class="close" (click)="sihPopup = false">&times;</a>
+        <a class="close" (click)="closePopupFun()">&times;</a>
         <div class="content">
         <img src="assets/sih.jpg" alt="">
         </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PdfService } from 'src/app/pdf.service';
 
 @Component({
   selector: 'app-tech-skills',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechSkillsComponent implements OnInit {
 
-  constructor() { }
+  opacityNew : any;
+  constructor(private pdfService : PdfService) { }
 
   ngOnInit(): void {
+    this.pdfService.topBar.subscribe(value => {
+      this.opacityNew = value;
+   });
   }
 
 }

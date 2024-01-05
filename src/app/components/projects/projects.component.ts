@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PdfService } from 'src/app/pdf.service';
 
 @Component({
   selector: 'app-projects',
@@ -8,9 +9,13 @@ import { Router } from '@angular/router';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor(private router : Router) { }
+  opacityNew : any;
+  constructor(private router : Router, private pdfService : PdfService) { }
 
   ngOnInit(): void {
+    this.pdfService.topBar.subscribe(value => {
+      this.opacityNew = value;
+   });
   }
 
   openSourceCode(type : any){

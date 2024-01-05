@@ -9,12 +9,14 @@ declare const PDFObject: any;
 })
 export class ResumeComponent implements OnInit {
 
-  pdfData : any;
-  pdfObject : any;
-  isLoading :any = false;
+  opacityNew :any;
+
   constructor(private pdfService: PdfService, private router : Router) { }
 
   ngOnInit(): void {
+    this.pdfService.topBar.subscribe(value => {
+      this.opacityNew = value;
+   });
   }
 
 }

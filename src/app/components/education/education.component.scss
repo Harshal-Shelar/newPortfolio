@@ -68,7 +68,6 @@
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    background-color: #1d1d1d;
 
     .imgAndDetails {
         display: inline-block;
@@ -86,10 +85,11 @@
         }
 
         .details {
-            background-color: black;
+            background-color: #010510;
             padding: 6rem 0.6rem 1rem;
             border-radius: 10px;
-            box-shadow: 7px 7px 15px 5px rgb(9, 9, 9);
+            box-shadow: 7px 7px 15px 5px rgb(0, 0, 0);
+            border-bottom: 5px solid rgb(0, 132, 255);
 
             h4, .year, .degree{
                 color: white;

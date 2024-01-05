@@ -14,10 +14,14 @@ export class WorkComponent implements OnInit {
   technology : any;
   date : any;
   disg : any;
+  opacityNew : any;
 
   constructor(private pdfService : PdfService) { }
 
   ngOnInit(): void {
+    this.pdfService.topBar.subscribe(value => {
+      this.opacityNew = value;
+   });
   }
 
   openPopupFun(type:any){

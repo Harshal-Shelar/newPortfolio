@@ -9,9 +9,13 @@ import { PdfService } from 'src/app/pdf.service';
 export class ProfileComponent implements OnInit {
 
   openPopup : any;
+  opacityNew : any;
   constructor(private pdfService : PdfService) { }
 
   ngOnInit(): void {
+    this.pdfService.topBar.subscribe(value => {
+      this.opacityNew = value;
+   });
   }
 
   openPopupFun(){

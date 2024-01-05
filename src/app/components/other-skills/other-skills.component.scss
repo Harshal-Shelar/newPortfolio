@@ -8,14 +8,14 @@
     }
 
     .innerClass {
-        background-color: transparent;
+        background-color: #010510;
         width: -moz-fit-content;
         width: fit-content;
         text-align: center;
         padding: 2rem;
         margin: 3rem auto;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 10px 10px black;
 
         .hobHeading {
             text-align: center;
@@ -226,7 +226,7 @@
 @media (max-width : 767px) {
     .mainOtherSkills{
         .innerClass{
-            width: 90%;
+            width: 80%;
             margin-top: 2rem;
             .classMain{
                 display: inline;

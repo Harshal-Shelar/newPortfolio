@@ -20,6 +20,12 @@ export class HeaderComponent implements OnInit {
   }
 
   openHideNav(){
-    this.openNav = !this.openNav;
+    this.openNav = true;
+    this.pdfService.setTopBar(true);
+  }
+
+  closeHideNav(){
+    this.openNav = false;
+    this.pdfService.setTopBar(false);
   }
 }
