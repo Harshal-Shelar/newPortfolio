@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PdfService } from 'src/app/pdf.service';
 
 @Component({
   selector: 'app-work',
@@ -14,12 +15,14 @@ export class WorkComponent implements OnInit {
   date : any;
   disg : any;
 
-  constructor() { }
+  constructor(private pdfService : PdfService) { }
 
   ngOnInit(): void {
   }
 
   openPopupFun(type:any){
+    this.pdfService.setdata(true);
+
     if(type === 'Aquarious'){
       this.openPopup = true;
       this.title = "Aquarious Technology";
@@ -66,6 +69,7 @@ export class WorkComponent implements OnInit {
   }
 
   closePopup(){
+    this.pdfService.setdata(false);
     this.openPopup = false;
     this.compDetails = [];
     this.technology = [];

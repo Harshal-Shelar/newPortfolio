@@ -4,7 +4,7 @@
     .backImg {
         height: 100%;
         width: 100%;
-        opacity: 0.3;
+        opacity: 0.6;
         position: fixed;
     }
 
@@ -27,31 +27,22 @@
             }
 
             .name {
-                color: rgb(0, 132, 255);
                 font-size: 70px;
                 font-weight: bold;
                 letter-spacing: 1.5px;
-            }
-
-            .name::after {
-                position: absolute;
-                width: 0%;
-                content: "";
-                left: 0;
-                bottom: 0;
-                height: 3px;
-                background-color: #333;
-                transition: all ease 1s;
-            }
-
-            .name:hover::after {
-                width: 100%;
+                background-position: center;
+                background-clip: text;
+                background-size: cover;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: url("https://t3.ftcdn.net/jpg/03/72/34/56/360_F_372345685_Lbm0zi9mPI1VqpkZaszdyTmbq4yVC0HO.jpg");
             }
 
             .profession {
-                color: #ffb703;
+                color: white;
                 font-size: 50px;
                 letter-spacing: 2px;
+                text-shadow: 0px 0px 10px rgb(0, 132, 255);
             }
 
             .btns {
@@ -87,7 +78,7 @@
                     font-size: 40px;
                     color: white;
                     cursor: pointer;
-                    filter: drop-shadow(0 0 0.75rem rgb(0, 132, 255));
+                    filter: drop-shadow(0 0 0.75rem #ffb703);
                 }
 
                 i:hover {
@@ -155,10 +146,16 @@
             overflow: auto;
 
             h2 {
-                text-decoration: underline;
                 font-weight: bold;
                 letter-spacing: 1px;
-                color: rgb(0, 132, 255);
+                background-position: center;
+                background-clip: text;
+                background-size: cover;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2446.jpg");
+                text-align: center;
+                font-size: 35px;
             }
 
             span {
@@ -208,10 +205,13 @@
                 }
 
                 .profileImg {
+                    text-align: center;
+
                     img {
                         height: 30rem;
                         width: auto;
                         margin-top: -10rem;
+                        filter: drop-shadow(10px 10px 8px rgb(0, 0, 0));
                     }
                 }
             }
@@ -239,6 +239,29 @@
             .mainInfo {
                 .btns {
                     display: inline-grid;
+                }
+            }
+        }
+    }
+
+    .overlay {
+        .popup {
+            width: 90%;
+            overflow: auto;
+            height: 80%;
+
+            .content {
+                h2{
+                    text-align: center;
+                }
+                .otherInfo {
+                    display: inline;
+
+                    .profileImg {
+                        img {
+                            margin-top: -8rem;
+                        }
+                    }
                 }
             }
         }

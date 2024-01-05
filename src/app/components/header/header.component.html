@@ -1,4 +1,4 @@
-<div class="mainFooter">
+<div class="mainFooter" [ngClass]=" opacityNew ? 'opacity3' : '' ">
     <div class="mainLogo">
         <img routerLink="/profile" src="assets/onlyLogo.png" alt="">
     </div>
@@ -15,7 +15,7 @@
         Contact Me
     </button>
 </div>
-<div class="navUl" *ngIf="openNav">
+<div class="navUl" *ngIf="openNav" >
     <ul (click)="openNav = false">
         <li routerLink="/profile" style="padding-top: 1rem;"> <i class="fa fa-user-circle-o"></i> Profile</li>
         <li routerLink="/work"> <i class="fa fa-suitcase"></i> Work</li>
@@ -24,12 +24,13 @@
         <li routerLink="/techSkills"> <i class="fa fa-laptop"></i> Technical Skills</li>
         <li routerLink="/otherSkills"> <i class="fa fa-futbol-o"></i> Other Skills</li>
         <li routerLink="/resume"> <i class="fa fa-file-pdf-o"></i> Resume</li>
+        <li routerLink="/contactMe"> <i class="fa fa-paper-plane-o"></i> Contact Me</li>
     </ul>
 </div>
 
-<div class="respFooter">
-    <div class="userLogo">
-        <img class="userImg" src="assets/casual.png" alt="">
+<div class="respFooter" [ngClass]=" opacityNew ? 'opacity3' : '' ">
+    <div class="userLogo" routerLink="/profile">
+        <img class="userImg" src="assets/passportCasual.jpg" alt="">
     </div>
     <div class="name">
         <span>My Portfolio</span>

@@ -28,6 +28,7 @@ $porcent-corejava: 65;
     @return 440 - (440 * $num) / 100;
 }
 .mainTech{
+    background-color: #01091e;
     .backImg{
         height: 100%;
         width: 100%;
@@ -53,7 +54,39 @@ $porcent-corejava: 65;
     width: 100%;
     min-height: 100%;
 }
-
+.boxHtml:hover{
+    box-shadow: 0px 0px 15px 3px $color-html !important;
+}
+.boxScss:hover{
+    box-shadow: 0px 0px 15px 3px $color-scss !important;
+}
+.boxJs:hover{
+    box-shadow: 0px 0px 15px 3px $color-js !important;
+}
+.boxAngular:hover{
+    box-shadow: 0px 0px 15px 3px $color-angular !important;
+}
+.boxReact:hover{
+    box-shadow: 0px 0px 15px 3px $color-react !important;
+}
+.boxNode:hover{
+    box-shadow: 0px 0px 15px 3px $color-node !important;
+}
+.boxExpress:hover{
+    box-shadow: 0px 0px 15px 3px $color-express !important;
+}
+.boxMySQL:hover{
+    box-shadow: 0px 0px 15px 3px $color-mysql !important;
+}
+.boxMongoDB:hover{
+    box-shadow: 0px 0px 15px 3px $color-mongodb !important;
+}
+.boxGit:hover{
+    box-shadow: 0px 0px 15px 3px $color-git !important;
+}
+.boxCoreJava:hover{
+    box-shadow: 0px 0px 15px 3px $color-corejava !important;
+}
 .progressbar {
     position: relative;
     width: 170px;
@@ -65,11 +98,10 @@ $porcent-corejava: 65;
     display: inline;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 15px 0px black;
     margin: 2rem;
     cursor: pointer;
-    background-color: transparent;
-    border: 1px solid rgb(0, 34, 71);
+    background-color: #010510;
     backdrop-filter: blur(7px);
 
     h2{

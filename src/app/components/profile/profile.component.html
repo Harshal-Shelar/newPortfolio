@@ -14,7 +14,7 @@
             </div>
             <div class="btns">
                 <button class="resume">Resume</button>
-                <button class="resume" (click)="openPopup = true">About</button>
+                <button class="resume" (click)="openPopupFun()">About</button>
             </div>
             <div class="socialBtns">
                 <i class="fa fa-github"></i>
@@ -27,7 +27,7 @@
 
 <div class="overlay" *ngIf="openPopup">
     <div class="popup">
-        <a class="close" (click)="openPopup = false">&times;</a>
+        <a class="close" (click)="closePopupFun()">&times;</a>
         <div class="content">
             <h2>About</h2>
             <span>Immediate joiner. Looking for a better opportunity as an Angular or MEAN STACK

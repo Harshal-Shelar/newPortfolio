@@ -15,20 +15,6 @@ export class ResumeComponent implements OnInit {
   constructor(private pdfService: PdfService, private router : Router) { }
 
   ngOnInit(): void {
-    this.isLoading = true;
-    this.pdfService.getPdf().subscribe({
-      next: (res) => {
-        this.pdfData = res;
-        this.isLoading = false;
-        if (this.pdfData) {
-          this.handleRenderPdf(this.pdfData);
-        }
-      },
-    });
-  }
-
-  handleRenderPdf(data:any) {
-    this.pdfObject = PDFObject.embed(data, '#pdfContainer');
   }
 
 }

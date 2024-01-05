@@ -1,5 +1,5 @@
 .mainWork {
-    // overflow: auto;
+    background-color: #01091e;
 
     .backImg {
         height: 100%;
@@ -7,7 +7,7 @@
         opacity: 0.3;
         position: fixed;
     }
-   
+
     .workInfo {
         margin: 0 auto 5rem;
         width: 1100px;
@@ -21,18 +21,20 @@
             -webkit-background-clip: text;
             padding-top: 5rem;
         }
+
         .cards {
             display: flex;
             gap: 2rem;
             margin-top: 7rem;
 
             .card {
-                background-color: transparent;
+                display: inline-grid;
+                background-color: #010510;
                 padding: 2rem 1rem;
                 width: 400px;
                 backdrop-filter: blur(15px);
-                border: 0.5px solid rgb(36, 36, 36);
-                box-shadow: 10px 10px 15px -5px rgb(45, 45, 45);
+                border-radius: 15px;
+                box-shadow: 10px 10px 15px -5px rgb(0, 0, 0);
 
                 h3 {
                     font-size: 30px;
@@ -50,7 +52,7 @@
                         z-index: 999;
                         opacity: 1;
                         text-align: center;
-                        box-shadow: 0px 0px 10px 4px rgb(24, 24, 24);
+                        box-shadow: 5px 5px 10px 4px rgb(0, 0, 0);
                         border-radius: 20px;
                     }
                 }
@@ -137,39 +139,46 @@
             width: fit-content;
             overflow: auto;
 
-            .mainInfo{
+            .mainInfo {
                 border-bottom: 2px solid gray;
                 margin: 1rem 0;
                 padding-bottom: 1rem;
 
-                .title, .disg, .date {
+                .title,
+                .disg,
+                .date {
                     font-weight: bold;
                     letter-spacing: 1px;
                     text-align: center;
                     margin: 1px;
                 }
-                .title{
+
+                .title {
                     font-size: 40px;
                     color: rgb(0, 132, 255);
                 }
-                .disg{
+
+                .disg {
                     font-size: 30px;
                     color: #ffb703;
                 }
-                .date{
+
+                .date {
                     font-size: 20px;
                     color: rgb(0, 132, 255);
                 }
             }
-            .details{
-                ul{
-                    li{
+
+            .details {
+                ul {
+                    li {
                         letter-spacing: 1px;
                         color: #bababa;
                     }
                 }
             }
-            .tech{
+
+            .tech {
                 color: rgb(255, 255, 255);
                 margin-left: 2rem;
                 font-size: 17px;
@@ -177,7 +186,7 @@
                 font-weight: bold;
                 letter-spacing: 0.5px;
 
-                span{
+                span {
                     color: #ffb703;
                     margin: 2rem 0;
                 }
@@ -187,19 +196,47 @@
 }
 
 @media (max-width : 1124px) {
-    .mainWork{
-        .workInfo{
+    .mainWork {
+        .workInfo {
             width: 80%;
-            .heading{
+
+            .heading {
                 padding-top: 2rem;
                 font-size: 40px;
             }
-            .cards{
-                display: inline-block;
 
-                .card{
-                    margin: 0 0 7rem;
-                    height: fit-content;
+            .cards {
+                display: inline-block;
+                gap: 2rem;
+                .card {
+                    margin: 0 auto 7rem;
+                    max-height: fit-content;
+                    padding-bottom: 1.5rem;
+                    min-height: fit-content;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 767px) {
+    .overlay {
+        .popup {
+            width: 90%;
+            max-height: 80%;
+            height: fit-content;
+            overflow: auto;
+            margin: 7rem auto 20px;
+
+            .content {
+                .mainInfo {
+                    .title {
+                        font-size: 30px;
+                    }
+
+                    .disg {
+                        font-size: 25px;
+                    }
                 }
             }
         }
@@ -207,16 +244,18 @@
 }
 
 @media (max-width: 500px) {
-    .mainWork{
-        .workInfo{
-            .heading{
+    .mainWork {
+        .workInfo {
+            .heading {
                 padding-top: 6rem;
             }
-            .cards{
+
+            .cards {
                 margin: 5rem auto 0;
                 width: 100%;
                 text-align: center;
-                .card{
+
+                .card {
                     width: 100%;
                 }
             }
