@@ -89,15 +89,18 @@
             padding: 6rem 0.6rem 1rem;
             border-radius: 10px;
             box-shadow: 7px 7px 15px 5px rgb(0, 0, 0);
-            border-bottom: 5px solid rgb(0, 132, 255);
+            border-bottom: 5px solid #ffb703;
 
             h4, .year, .degree{
                 color: white;
                 font-size: 20px;
                 letter-spacing: 1px;
             }
-            .degree{
+            .year{
                 color: #ffb703;
+            }
+            .degree{
+                color: rgb(0, 132, 255);
             }
         }
     }

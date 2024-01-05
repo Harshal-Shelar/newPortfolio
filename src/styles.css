@@ -2,48 +2,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;400&display=swap");
 
 
-*{
+* {
     font-family: 'Rubik', sans-serif;
 }
-body{
+
+body {
     background-color: #01091e;
 }
 
-.colorYellow{
+.colorYellow {
     background-color: #ffb703 !important;
     border: 2px solid #ffb703 !important;
     color: black !important;
     font-weight: bold !important;
 }
 
-.colorYellow:hover{
+.colorYellow:hover {
     background-color: black !important;
     border: 2px solid #ffb703 !important;
     color: #ffb703 !important;
     box-shadow: 0px 0px 15px 2px #ffb703 !important;
 }
 
-.colorBlue{
+.colorBlue {
     color: rgb(0, 132, 255);
 }
-.opacity3{
+
+.opacity3 {
     opacity: 0.3;
 }
-.marginRight{
+
+.marginRight {
     margin-right: -5rem !important;
 }
-.borderRight{
+
+.borderRight {
     border-right: 5px solid #ffb703;
 }
 
-.borderLeft{
+.borderBottomBlue {
+    border-bottom: 5px solid rgb(0, 132, 255);
+}
+
+.borderBottomYellow {
+    border-bottom: 5px solid #ffb703;
+}
+
+.borderLeft {
     border-left: 5px solid #ffb703;
 }
-.mainHeading{
+
+.mainHeading {
     font-size: 50px;
+    background-position: center;
+    background-clip: text;
+    background-size: cover;
+    -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-stroke: 2px rgb(0, 132, 255);
-    text-shadow: 0 0 10px rgb(0, 52, 100), 0 0 10px rgb(0, 132, 255); 
+    background-image: url("https://c8.alamy.com/comp/2NP01N7/abstract-image-of-mixed-warm-colors-of-acrylic-paint-2NP01N7.jpg");
     padding-top: 5rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -53,7 +69,7 @@ body{
 }
 
 @media (max-width : 767px) {
-    .mainHeading{
+    .mainHeading {
         font-size: 40px;
     }
 }

@@ -13,13 +13,13 @@
                 Software Engineer
             </div>
             <div class="btns">
-                <button class="resume">Resume</button>
+                <button class="resume" routerLink="/resume">Resume</button>
                 <button class="resume" (click)="openPopupFun()">About</button>
             </div>
             <div class="socialBtns">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-github" (click)="opengithub()"></i>
                 <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-linkedin" (click)="openLinkedIn()"></i>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
                             <i class="fa fa-envelope-o"></i>
                             <span class="data">harshalshelar8251@gmail.com</span>
                         </div>
-                        <div class="info">
+                        <div class="info cursorPointer" (click)="openMap()">
                             <i class="fa fa-map-marker"></i>
                             <span class="data">3207, Near Phadtare Wada, Ganapati Road, Ashta 416 301</span>
                         </div>
