@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.pdfService.change.subscribe(value => {
       this.opacityNew = value;
-      console.log("opacity ",this.opacityNew);
    });
   }
 
