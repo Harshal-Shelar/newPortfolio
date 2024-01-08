@@ -25,12 +25,13 @@
         .card {
             display: inline-grid;
             padding: 1rem;
-            border-radius: 10px;
+            border-radius: 0px;
             box-shadow: 7px 7px 15px 2px rgb(0, 0, 0);
             backdrop-filter: blur(15px);
-            background-color: #010510;
+            background-color: #131c31;
             margin: 1rem 0;
             width: 700px;
+            border: 1px solid rgb(45, 56, 93);
 
             .imgAndDetails {
                 display: flex;

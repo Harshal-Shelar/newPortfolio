@@ -4,7 +4,7 @@
     .backImg {
         height: 100%;
         width: 100%;
-        opacity: 0.6;
+        opacity: 0.5;
         position: fixed;
     }
 
@@ -111,12 +111,13 @@
     .popup {
         margin: 5rem auto;
         padding: 20px;
-        background: #2f2f2f;
+        background: #010510;
         border-radius: 15px;
         width: min-content;
         position: relative;
         transition: all 5s ease-in-out;
         z-index: 999;
+        box-shadow: 0px 0px 10px 1px #382800;
 
         .backImg {
             height: 100%;

@@ -9,8 +9,7 @@
     height: 4rem;
     position: fixed;
     z-index: 999 !important;
-    opacity: 1;
-    box-shadow: 0px 0px 15px 2px black;
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 52);
 
     .mainLogo {
         img {
@@ -58,13 +57,13 @@
         font-size: 15px;
         padding: 0.5rem 1rem;
         letter-spacing: 1px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     .contactMe:hover {
         box-shadow: 0px 0px 15px 2px rgb(0, 132, 255);
         background-color: black;
-        border: 2px solid black;
+        border: 2px solid rgb(0, 132, 255);
         transition: 0.5s;
         color: rgb(0, 132, 255);
     }
