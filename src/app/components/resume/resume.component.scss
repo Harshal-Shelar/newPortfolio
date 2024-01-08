@@ -1,17 +1,24 @@
 .image {
     text-align: center;
+    z-index: 99;
 
     img {
         height: 100%;
         width: auto;
         z-index: 999;
-        opacity: 1;
         box-shadow: 7px 7px 10px 2px black;
     }
 }
 
-.backImg {
+.resumeMain {
     background-color: #01091e;
+
+    .backImg{
+        height: 100%;
+        width: 100%;
+        opacity: 0.4;
+        position: fixed;
+    }
 }
 
 .btnDownload {

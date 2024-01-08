@@ -1,5 +1,6 @@
 .mainProjects {
     background-color: #01091e;
+
     .backImg {
         height: 100%;
         width: 100%;
@@ -26,17 +27,14 @@
             display: inline-grid;
             padding: 1rem;
             border-radius: 0px;
-            box-shadow: 7px 7px 15px 2px rgb(0, 0, 0);
-            backdrop-filter: blur(15px);
-            background-color: #131c31;
+            background-color: transparent;
             margin: 1rem 0;
-            width: 700px;
-            border: 1px solid rgb(45, 56, 93);
+            width: 1000px;
+            border: none;
 
             .imgAndDetails {
                 display: flex;
                 gap: 2rem;
-                border-bottom: 1px solid gray;
                 padding-bottom: 1rem;
                 align-items: center;
 
@@ -44,9 +42,9 @@
                     img {
                         z-index: 999;
                         opacity: 1;
-                        height: 10rem;
-                        width: auto;
-                        box-shadow: 0px 0px 15px 1px rgb(61, 61, 61);
+                        height: 13rem;
+                        width: 25rem;
+                        box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
                     }
                 }
 
@@ -54,6 +52,12 @@
                     display: inline-block;
                     text-align: left;
                     color: white;
+                    box-shadow: 7px 7px 15px 2px rgb(0, 0, 0);
+                    backdrop-filter: blur(10px);
+                    padding: 2rem;
+                    height: 13rem;
+                    width: 100%;
+                    align-items: center;
 
                     h3 {
                         font-size: 24px;
@@ -69,6 +73,7 @@
                         border-radius: 10px;
                         padding: 0.5rem 1rem;
                         color: rgb(0, 132, 255);
+                        margin-left: 1rem;
                     }
 
                     .sourceBtn:hover {
@@ -99,6 +104,65 @@
         }
     }
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+
+    .popup {
+        margin: 5rem auto 20px;
+        padding: 20px;
+        background: #1e1e1e;
+        border-radius: 15px;
+        width: 650px;
+        position: relative;
+        transition: all 5s ease-in-out;
+        z-index: 999;
+
+        .close {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            transition: all 200ms;
+            font-size: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #bababa;
+        }
+
+        .close:hover {
+            color: rgb(0, 132, 255);
+            cursor: pointer;
+        }
+
+        .content {
+            max-height: fit-content;
+            width: fit-content;
+            overflow: auto;
+            margin-top: 2rem;
+
+            h3{
+                color: #ffb703;
+                text-align: center;
+            }
+            .details {
+                ul {
+                    li {
+                        letter-spacing: 1px;
+                        color: #bababa;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width : 999px) {
     .mainProjects {
@@ -114,6 +178,8 @@
 
                     .headings {
                         margin-top: 1rem;
+                        text-align: center;
+                        height: fit-content;
                     }
 
                     .proIcon {
@@ -130,14 +196,53 @@
 @media (max-width : 767px) {
     .mainProjects {
         .mainCard {
-            .heading{
+            .heading {
                 font-size: 40px;
             }
+
             .card {
                 width: 80%;
 
                 .imgAndDetails {
                     width: 100%;
+
+                    .headings{
+                        .sourceBtn{
+                            width: 100%;
+                            margin: 1rem 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .overlay {
+        .popup {
+            width: 90%;
+            overflow: auto;
+            height: fit-content;
+            max-height: 80%;
+
+            .content {
+                h2{
+                    text-align: center;
+                }
+                .otherInfo {
+                    display: inline;
+
+                    .mainInfo{
+                        .twoBlock{
+                            .info{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+
+                    .profileImg {
+                        img {
+                            margin-top: -8rem;
+                        }
+                    }
                 }
             }
         }
