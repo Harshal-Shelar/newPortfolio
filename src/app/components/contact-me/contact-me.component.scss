@@ -1,10 +1,20 @@
-.mainClass{
-    margin: 2% auto;
-    width: 800px;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 7px 7px 10px 1px black;
-    background-color: #010510;
+.contactMainClass{
+    .backImg{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        opacity: 0.5;
+    }
+    .mainClass{
+        margin: 2% auto;
+        width: 800px;
+        padding: 2rem;
+        z-index: 999;
+        border-radius: 15px;
+        box-shadow: 7px 7px 10px 1px black;
+        backdrop-filter: blur(15px);
+        background-color: transparent;
+    }
 }
 @media (max-width : 767px) {
     .contactMainClass{
