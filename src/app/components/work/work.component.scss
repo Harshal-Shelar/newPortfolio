@@ -101,7 +101,18 @@
             .card:hover{
                 box-shadow: 0px 0px 15px 2px rgb(0, 123, 255);
                 background-color: black;
+                transition: 0.9s;
+                border-top-right-radius: 0px ;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .card::after{
                 transition: 0.5s;
+                border-top-right-radius: 0px ;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom-right-radius: 0px;
             }
         }
 

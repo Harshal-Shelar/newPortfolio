@@ -2,6 +2,13 @@
     <img class="backImg" src="https://wallpapers.com/images/hd/4k-earth-blue-sunrise-mytv6wwpw580w5lh.jpg" alt="">
 
     <div class="mainInfoAndImg">
+        <div class="socialBtns">
+            <div class="whiteLine"></div>
+            <i class="fa fa-github" (click)="opengithub()"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin" (click)="openLinkedIn()"></i>
+            <div class="whiteLine"></div>
+        </div>
         <div class="mainInfo">
             <div class="intro">
                 Hi, my name is
@@ -16,12 +23,8 @@
                 <button class="resume" routerLink="/resume">Resume</button>
                 <button class="resume" (click)="openPopupFun()">About</button>
             </div>
-            <div class="socialBtns">
-                <i class="fa fa-github" (click)="opengithub()"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin" (click)="openLinkedIn()"></i>
-            </div>
         </div>
+        
     </div>
 </div>
 
